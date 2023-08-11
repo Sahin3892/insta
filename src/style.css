@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.allContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contents {
+  width: 300px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.img-posts {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nav-bar {
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 16px;
+  padding-right: 16px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.deleteComment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteComment:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.addComment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addComment img:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.create-container {
+  display: flex;
+  align-items: center; /* Zentriert die Elemente */
+  cursor: pointer; /* Zeigt den Mauszeiger als Zeigefinger */
+}
+
+.create-container img {
+  margin-right: 5px; /* Fügt einen kleinen Abstand zwischen dem Bild und dem Text hinzu */
+}
+
+.insta-icon {
+  object-fit: none;
+  padding-bottom: 130px;
+  margin-top: 28px;
+  padding-right: 12px;
+}
+
+@media (max-width: 700px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .create-container {
+    padding-bottom: 30px;
+  }
+
+  .nav-bar {
+    margin-top: 40px;
+    border-right: 0px solid #dbdbdb;
+  }
+
+  .insta-icon {
+    margin-top: 1px;
+  }
+}
